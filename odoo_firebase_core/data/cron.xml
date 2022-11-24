@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.cron" id="firebase_auth_local_sync_cron">
+            <field name="name">Firebase: Auth Local Sync</field>
+            <field name="model_id" ref="model_firebase_auth"/>
+            <field name="state">code</field>
+            <field name="code">model.cron_local_sync()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">hours</field>
+            <field name="numbercall">-1</field>
+            <field name="active" eval="True"/>
+            <field name="doall" eval="False"/>
+        </record>
+        <record model="ir.cron" id="firebase_auth_sync_cron">
+            <field name="name">Firebase: Auth Sync</field>
+            <field name="model_id" ref="model_firebase_auth"/>
+            <field name="state">code</field>
+            <field name="code">model.cron_remote_sync()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">minutes</field>
+            <field name="numbercall">-1</field>
+            <field name="active" eval="True"/>
+            <field name="doall" eval="False"/>
+        </record>
+        <record model="ir.cron" id="firebase_sync_import">
+            <field name="name">Firebase: Import Sync</field>
+            <field name="model_id" ref="model_firebase_account"/>
+            <field name="state">code</field>
+            <field name="code">model.cron_import_data()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">minutes</field>
+            <field name="numbercall">-1</field>
+            <field name="active" eval="True"/>
+            <field name="doall" eval="False"/>
+        </record>
+        <record model="ir.cron" id="firebase_log_clean">
+            <field name="name">Firebase: Log Clean</field>
+            <field name="model_id" ref="model_firebase_log"/>
+            <field name="state">code</field>
+            <field name="code">model.cron_clean()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="active" eval="True"/>
+            <field name="doall" eval="False"/>
+        </record>
+        <record model="ir.cron" id="firebase_storage_sync">
+            <field name="name">Firebase: Storage Sync</field>
+            <field name="model_id" ref="model_firebase_storage"/>
+            <field name="state">code</field>
+            <field name="code">model.cron_sync_attachments()</field>
+            <field name="interval_number">10</field>
+            <field name="interval_type">minutes</field>
+            <field name="numbercall">-1</field>
+            <field name="active" eval="True"/>
+            <field name="doall" eval="False"/>
+        </record>
+    </data>
+</odoo>

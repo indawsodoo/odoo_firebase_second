@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+acc_public_firebase_account,Firebase Account Public Access,model_firebase_account,base.group_user,1,0,0,0
+acc_total_firebase_account,Firebase Account Total Access,model_firebase_account,base.group_system,1,1,1,1
+acc_public_firebase_rule,Firebase Rule Public Access,model_firebase_rule,base.group_user,1,0,0,0
+acc_total_firebase_rule,Firebase Rule Total Access,model_firebase_rule,base.group_system,1,1,1,1
+acc_public_firebase_auth,Firebase Auth Public Access,model_firebase_auth,base.group_user,1,0,0,0
+acc_total_firebase_auth,Firebase Auth Total Access,model_firebase_auth,base.group_system,1,1,1,1
+acc_public_firebase_storage,Firebase Storage Public Access,model_firebase_storage,base.group_user,1,0,0,0
+acc_total_firebase_storage,Firebase Storage Total Access,model_firebase_storage,base.group_system,1,1,1,1
+acc_total_firebase_log,Firebase Log,model_firebase_log,base.group_system,1,1,1,1

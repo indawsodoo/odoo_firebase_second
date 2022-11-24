@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <!-- Firebase Storage Storage -->
+        <record id="view_form_firebase_storage" model="ir.ui.view">
+            <field name="name">Firebase Storage</field>
+            <field name="model">firebase.storage</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="force_sync" string="Sync." type="object"
+                                confirm="Are you sure you want to synchronize all the attachments of this rule (it may take a while)?"
+                        />
+                    </header>
+                    <sheet>
+                        <group string="Datos de Firebase">
+                            <field name="name"/>
+                            <field name="path"/>
+                            <field name="domain" widget="domain" options="{'model': 'ir.attachment'}"/>
+                            <field name="is_public"/>
+                            <field name="expiration"/>
+                            <field name="active"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

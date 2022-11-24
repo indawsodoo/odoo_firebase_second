@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <!-- Firebase Accounts -->
+        <record id="view_form_firebase_account" model="ir.ui.view">
+            <field name="name">Firebase Account</field>
+            <field name="model">firebase.account</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group string="Firebase Information">
+                            <field name="name"/>
+                            <field name="account_firebase"/>
+                            <field name="bucket_url"/>
+                            <field name="file_firebase"/>
+                        </group>
+                        <notebook>
+                            <page string="Firestore">
+                                <group string="Sync rules">
+                                    <field nolabel="1" name="rule_ids" mode="tree">
+                                        <tree>
+                                            <field name="model_id"/>
+                                            <field name="path_firebase"/>
+                                            <field name="allow_create"/>
+                                            <field name="allow_update"/>
+                                            <field name="allow_delete"/>
+                                            <field name="active"/>
+                                            <button name="force_sync" string="Sync." type="object"
+                                                    confirm="Are you sure you want to synchronize all the records of this model (it may take a while)?"
+                                                    context="{'parent': active_id}"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page string="Authentication">
+                                <group>
+                                    <field name="auth"/>
+                                </group>
+                                <group attrs="{'invisible':[('auth','=','off')]}">
+                                    <field name="auth_domain" widget="domain" options="{'model': 'res.partner'}"/>
+                                </group>
+                                <group col="4" attrs="{'invisible':[('auth','=','off')]}">
+                                    <field name="auth_field_user"/>
+                                    <field name="auth_field_user_sufix"/>
+                                    <field name="auth_field_pass"/>
+                                </group>
+                            </page>
+                            <page string="Storage">
+                                <group string="Sync rules">
+                                    <field nolabel="1" name="storage_rule_ids" mode="tree">
+                                        <tree>
+                                            <field name="name"/>
+                                            <field name="path"/>
+                                            <field name="active"/>
+                                            <button name="force_sync" string="Sync." type="object"
+                                                    confirm="Are you sure you want to synchronize all the attachments of this rule (it may take a while)?"
+                                                    context="{'parent': active_id}"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_tree_firebase_account" model="ir.ui.view">
+            <field name="name">Settings</field>
+            <field name="model">firebase.account</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- ACTION -->
+        <record id="action_firebase_account" model="ir.actions.act_window">
+            <field name="name">Settings</field>
+            <field name="res_model">firebase.account</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[]</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <b>You have not any setting at moment</b>...
+                </p>
+            </field>
+        </record>
+    </data>
+</odoo>
