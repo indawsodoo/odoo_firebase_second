@@ -1,0 +1,191 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* odoo_firebase_core
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-03 05:34+0000\n"
+"PO-Revision-Date: 2020-05-03 05:34+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: odoo_firebase_core
+#: code:addons/odoo_firebase_core/models/odoo_firebase.py:71
+#: code:addons/odoo_firebase_core/models/odoo_firebase.py:85
+#: code:addons/odoo_firebase_core/models/odoo_firebase.py:99
+#, python-format
+msgid "\n"
+"                   Path has not a valid format.\n"
+"\n"
+"                   Check path can not has any symbol first (like slash /)\n"
+"               "
+msgstr "\n"
+"                   La ruta no tiene un formato válido.\n"
+"\n"
+"                   Verifica que la ruta no tenga ningún símbolo al inicio (ej: /)\n"
+"               "
+
+#. module: odoo_firebase_core
+#: model_terms:ir.actions.act_window,help:odoo_firebase_core.action_odoo_firebase
+msgid "<b>You have not any setting at moment</b>..."
+msgstr "<b>No tienes ninguna configuración en este momento</b>..."
+
+#. module: odoo_firebase_core
+#: model:ir.model.fields,field_description:odoo_firebase_core.field_firebase_account__account_firebase
+msgid "Account"
+msgstr "Cuenta"
+
+#. module: odoo_firebase_core
+#: model:ir.model.fields,field_description:odoo_firebase_core.field_firebase_rule__allow_create
+msgid "Allow Create"
+msgstr "Puede crear"
+
+#. module: odoo_firebase_core
+#: model:ir.model.fields,field_description:odoo_firebase_core.field_firebase_rule__allow_delete
+msgid "Allow Delete"
+msgstr "Puede eliminar"
+
+#. module: odoo_firebase_core
+#: model:ir.model.fields,field_description:odoo_firebase_core.field_firebase_rule__allow_update
+msgid "Allow Write"
+msgstr "Puede actualizar"
+
+#. module: odoo_firebase_core
+#: model:ir.model.fields,field_description:odoo_firebase_core.field_firebase_rule__account_id
+msgid "App Setting"
+msgstr "Configuración de la App"
+
+#. module: odoo_firebase_core
+#: model_terms:ir.ui.view,arch_db:odoo_firebase_core.view_form_odoo_firebase
+msgid "Are you sure you want to synchronize all the records of this model (it may take a while)?"
+msgstr "¿Estás seguro de querer sincronizar todos los registros de este modelo (puede que tarde un poco)?"
+
+#. module: odoo_firebase_core
+#: model:ir.model.fields,field_description:odoo_firebase_core.field_firebase_account__create_uid
+#: model:ir.model.fields,field_description:odoo_firebase_core.field_firebase_rule__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: odoo_firebase_core
+#: model:ir.model.fields,field_description:odoo_firebase_core.field_firebase_account__create_date
+#: model:ir.model.fields,field_description:odoo_firebase_core.field_firebase_rule__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: odoo_firebase_core
+#: model:ir.model.fields,field_description:odoo_firebase_core.field_firebase_account__display_name
+#: model:ir.model.fields,field_description:odoo_firebase_core.field_firebase_rule__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: odoo_firebase_core
+#: model:ir.ui.menu,name:odoo_firebase_core.odoo_firebase_menu_configurations
+msgid "Firebase"
+msgstr "Firebase"
+
+#. module: odoo_firebase_core
+#: model:ir.model,name:odoo_firebase_core.model_firebase_account
+msgid "Firebase App Setting"
+msgstr "Configuración App de Firebase"
+
+#. module: odoo_firebase_core
+#: model_terms:ir.ui.view,arch_db:odoo_firebase_core.view_form_odoo_firebase
+msgid "Firebase Information"
+msgstr "Información de Firebase"
+
+#. module: odoo_firebase_core
+#: model:ir.model.fields,field_description:odoo_firebase_core.field_firebase_account__file_firebase
+msgid "Firebase Key File"
+msgstr "Archivo clave de Firebase"
+
+#. module: odoo_firebase_core
+#: model:ir.model.fields,field_description:odoo_firebase_core.field_firebase_rule__path_firebase
+msgid "Firebase Path"
+msgstr "Ruta de Firebase"
+
+#. module: odoo_firebase_core
+#: model:ir.model.fields,field_description:odoo_firebase_core.field_firebase_account__id
+#: model:ir.model.fields,field_description:odoo_firebase_core.field_firebase_rule__id
+msgid "ID"
+msgstr "ID"
+
+#. module: odoo_firebase_core
+#: model:ir.model.fields,field_description:odoo_firebase_core.field_firebase_account____last_update
+#: model:ir.model.fields,field_description:odoo_firebase_core.field_firebase_rule____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: odoo_firebase_core
+#: model:ir.model.fields,field_description:odoo_firebase_core.field_firebase_account__write_uid
+#: model:ir.model.fields,field_description:odoo_firebase_core.field_firebase_rule__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: odoo_firebase_core
+#: model:ir.model.fields,field_description:odoo_firebase_core.field_firebase_account__write_date
+#: model:ir.model.fields,field_description:odoo_firebase_core.field_firebase_rule__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: odoo_firebase_core
+#: model:ir.model.fields,field_description:odoo_firebase_core.field_firebase_rule__model_id
+msgid "Modelo"
+msgstr "Modelo"
+
+#. module: odoo_firebase_core
+#: model:ir.model.fields,field_description:odoo_firebase_core.field_firebase_account__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: odoo_firebase_core
+#: model:ir.model,name:odoo_firebase_core.model_odoo_firebase
+msgid "Odoo con Firebase"
+msgstr ""
+
+#. module: odoo_firebase_core
+#: model:ir.model.fields,help:odoo_firebase_core.field_firebase_rule__path_firebase
+msgid "Path of firebase database where you want to write odoo info."
+msgstr "Ruta de Firebase donde quieres guardar la información de odoo"
+
+#. module: odoo_firebase_core
+#: model:ir.model.fields,field_description:odoo_firebase_core.field_firebase_account__rule_ids
+msgid "Paths to Sync."
+msgstr "Ruta para sincronizar"
+
+#. module: odoo_firebase_core
+#: model:ir.model.fields,field_description:odoo_firebase_core.field_firebase_rule__active
+msgid "Regla activa"
+msgstr "Regla activa"
+
+#. module: odoo_firebase_core
+#: model:ir.actions.act_window,name:odoo_firebase_core.action_odoo_firebase
+#: model:ir.ui.menu,name:odoo_firebase_core.odoo_firebase_menu
+msgid "Settings"
+msgstr "Ajustes"
+
+#. module: odoo_firebase_core
+#: model_terms:ir.ui.view,arch_db:odoo_firebase_core.view_form_odoo_firebase
+msgid "Sync."
+msgstr "Sinc."
+
+#. module: odoo_firebase_core
+#: model:ir.model,name:odoo_firebase_core.model_ir_config_parameter
+msgid "System Parameter"
+msgstr "Parametros de Sistema"
+
+#. module: odoo_firebase_core
+#: model:ir.model,name:odoo_firebase_core.model_firebase_rule
+msgid "firebase.rule"
+msgstr ""
+
+#. module: odoo_firebase_core
+#: model:ir.model,name:odoo_firebase_core.model_odoo_firebase_line
+msgid "odoo.firebase.line"
+msgstr ""
+

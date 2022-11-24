@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <!-- Firebase Accounts -->
+        <record id="view_form_firebase_auth" model="ir.ui.view">
+            <field name="name">Form Firebase Auth</field>
+            <field name="model">firebase.auth</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="account_id"/>
+                            <field name="partner_id"/>
+                            <field name="uuid"/>
+                            <field name="user"/>
+                            <field name="code"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_tree_firebase_auth" model="ir.ui.view">
+            <field name="name">Tree Firebase Auth</field>
+            <field name="model">firebase.auth</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="partner_id"/>
+                    <field name="uuid"/>
+                    <field name="user"/>
+                    <field name="code"/>
+                </tree>
+            </field>
+        </record>
+        <!-- ACTION -->
+        <record id="action_firebase_auth" model="ir.actions.act_window">
+            <field name="name">Firebase Authentication</field>
+            <field name="res_model">firebase.auth</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[]</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <b>You have not any users sync at moment</b>...
+                </p>
+            </field>
+        </record>
+    </data>
+</odoo>
