@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <!-- MENU ITEM -->
+        <menuitem id="firebase_acount_menu_configurations"
+                  name="Firebase"
+                  parent="base.menu_administration"
+                  sequence="99"/>
+
+        <menuitem id="firebase_account_menu"
+                  parent="firebase_acount_menu_configurations"
+                  sequence="1" action="action_firebase_account"
+                  name="Accounts"/>
+
+        <menuitem id="firebase_auth_menu"
+                  parent="firebase_acount_menu_configurations"
+                  sequence="2" action="action_firebase_auth"
+                  name="Auth"/>
+
+        <menuitem id="firebase_log_menu"
+                  parent="firebase_acount_menu_configurations"
+                  sequence="3" action="action_firebase_log"
+                  name="Log"/>
+    </data>
+</odoo>
